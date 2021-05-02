@@ -12,16 +12,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const rotateButton = document.querySelector(#rotate)
     const turnDisplay = document.querySelector(#whose-go)
     const infoDisplay = document.querySelector(#info)
+    const userSquares = []
+    const computerSquares = []
 
     const width = 10 
 
     //Create board
-    function createBoard() {
+    function createBoard(grid, squares, width) {
         for (let i = 0; i < width * width; i++) {
-            document.
+            const square = document.createElement('div')
+            square.dataset.id = i
+            grid.appendChild(square)
+            squares.push(square)
         }
-
     }
+
+    createBoard(useGrid, userSquares)
+    createBoard(computerGrid, computerSquares)
 
 
 })
