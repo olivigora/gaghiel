@@ -30,5 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
     createBoard(useGrid, userSquares)
     createBoard(computerGrid, computerSquares)
 
+    // Ships
+    const shipArray = [
+        {
+            name: "destroyer"
+            directions: [
+                [0, 1]
+                [0, width]
+            ]
+        },
+        {
+            name: "submarine"
+            directions: [
+                [0, 1, 2]
+                [0, width, width*2]
+            ]
+        }
+    ]
 
 })
